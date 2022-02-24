@@ -24,8 +24,8 @@
     <header class="header">
       <div class="logo"><img src="./images/logo/Booki.png" alt="logo" /></div>
       <nav class="menu">
-        <div class="menu__item">Hébergements</div>
-        <div class="menu__item">Activités</div>
+        <div class="menu__item"><a href="#">Hébergements</a></div>
+        <div class="menu__item"><a href="#">Activités</a></div>
       </nav>
     </header>
     <!-- Fin de header -->
@@ -40,43 +40,52 @@
         <form class="searchbar__form">
           <span class="dot"><i class="fa-solid fa-location-dot"></i></span>
           <input
-            type="text"
+            type="search"
             value="Marseille, France"
             placeholder="Destination"
           />
-          <span class="searchbar__form--button google"
+          <span class="searchbar__form--button glass"
             ><i class="fa-solid fa-magnifying-glass"></i
           ></span>
-          <span class="searchbar__form--button wide">Rechercher</span>
+          <span class="searchbar__form--button search">Rechercher</span>
         </form>
+
+        <!-- Partie Filtres -->
+
         <div class="filters">
-          <div class="filters__title">
-            <h3>Filtres</h3>
+          <div class="filters__container">
+            <div class="filters__title">
+              <h3>Filtres</h3>
+            </div>
+
+            <div class="filters__items">
+              <div class="filter">
+                <span class="filter__icon">
+                  <i class="fa-solid fa-money-bill-wave"></i>
+                </span>
+                <h3 class="filter__name">Économique</h3>
+              </div>
+              <div class="filter">
+                <span class="filter__icon"
+                  ><i class="fa-solid fa-child"></i
+                ></span>
+                <h3 class="filter__name">Familial</h3>
+              </div>
+              <div class="filter">
+                <span class="filter__icon"
+                  ><i class="fa-solid fa-heart"></i
+                ></span>
+                <h3 class="filter__name">Romantique</h3>
+              </div>
+              <div class="filter">
+                <span class="filter__icon"
+                  ><i class="fa-solid fa-dog"></i
+                ></span>
+                <h3 class="filter__name">Animaux autorisés</h3>
+              </div>
+            </div>
           </div>
-          <div class="filters__items">
-            <div class="filter">
-              <span class="filter__icon"
-                ><i class="fa-solid fa-money-bill-wave"></i
-              ></span>
-              <span class="filter__name">Économique</span>
-            </div>
-            <div class="filter">
-              <span class="filter__icon"
-                ><i class="fa-solid fa-child"></i
-              ></span>
-              <span class="filter__name">Familial</span>
-            </div>
-            <div class="filter">
-              <span class="filter__icon"
-                ><i class="fa-solid fa-heart"></i
-              ></span>
-              <span class="filter__name">Romantique</span>
-            </div>
-            <div class="filter">
-              <span class="filter__icon"><i class="fa-solid fa-dog"></i></span>
-              <span class="filter__name">Animaux autorisés</span>
-            </div>
-          </div>
+
           <div class="filters__infos">
             <span class="filters__infos--icon"
               ><i class="fa-solid fa-info"></i
@@ -86,6 +95,8 @@
             >
           </div>
         </div>
+
+        <!-- Fin de la partie filtres -->
       </section>
       <!-- Fin de la barre de recherche -->
     </main>
