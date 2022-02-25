@@ -8,7 +8,6 @@
 
 body {
   font-family: "Raleway", sans-serif;
-  margin: 0 10px;
   box-sizing: border-box;
 }
 a {
@@ -34,12 +33,19 @@ input {
 input:focus {
   outline: none;
 }
+main {
+  margin: 0 10px;
+}
+li {
+  list-style-type: none;
+}
 
 /* Début de header */
 
 .header {
   display: flex;
   justify-content: space-between;
+  margin: 0 10px;
 }
 .logo {
   margin-left: 20px;
@@ -131,6 +137,7 @@ input:focus {
   display: flex;
   align-items: center;
   margin-right: 20px;
+  border-radius: 20px;
 }
 .filters .filters__container .filters__items .filter .filter__name {
   border: 2px solid #f2f2f2;
@@ -139,12 +146,13 @@ input:focus {
   padding: 10px 10px 10px 35px;
   position: relative;
   right: 25px;
-  cursor: pointer;
   transition: all 200ms ease-in-out;
 }
-.filters .filters__container .filters__items .filter .filter__name:hover {
+.filter__icon:hover,
+.filter__name:hover {
+  cursor: pointer;
   color: #0065fc;
-  background-color: #deebff;
+  background-color: #f2f2f2;
 }
 .filters .filters__container .filters__items .filter .filter__icon {
   display: flex;
@@ -158,7 +166,6 @@ input:focus {
   border-radius: 100%;
   padding: 11px;
   z-index: 2;
-  cursor: pointer;
 }
 .filters .filters__infos {
   display: flex;
@@ -314,6 +321,7 @@ input:focus {
 .activities .cards .card__double--even {
   border-radius: 20px;
   box-shadow: 2px 2px 5px lightgray;
+  transition: all 150ms ease-in-out;
 }
 .activities .cards .card__large,
 .activities .cards .card__double {
@@ -356,4 +364,29 @@ input:focus {
 }
 .text h4 {
   margin: 0;
+}
+.activities .cards .card__large:hover,
+.activities .cards .card__double .card__double--max:hover,
+.activities .cards .card__double .card__double--min:hover,
+.activities .cards .card__double .card__double--even:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+/* Fin de la section activités */
+
+/* Début du footer */
+
+.footer {
+  background-color: #f2f2f2;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin-top: 50px;
+}
+.footer .links {
+  margin-right: 250px;
+}
+.footer .links ul li {
+  padding-top: 10px;
 }
