@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap");
 
 /* Reset settings */
+* {
+  padding: 0;
+  margin: 0;
+}
 
 body {
   font-family: "Raleway", sans-serif;
@@ -13,7 +17,6 @@ a {
 a:visited {
   color: inherit;
 }
-
 img {
   object-fit: cover;
 }
@@ -23,6 +26,9 @@ h1 {
 }
 h3 {
   margin: 5px 0;
+}
+h4 {
+  margin-bottom: 5px;
 }
 
 input {
@@ -63,6 +69,10 @@ input:focus {
 /* Fin de header */
 
 /* Début de barre de recherche */
+
+.searchbar .searchbar__title {
+  margin-bottom: 15px;
+}
 
 .searchbar .searchbar__title p {
   font-size: 15px;
@@ -173,3 +183,66 @@ input:focus {
   font-size: 15px;
 }
 /* Fin de barre de recherche */
+
+/* Partie hotels */
+.hotels {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+}
+/* Partie hébegements */
+.hotels .housing {
+  background: #f2f2f2;
+  border-radius: 20px;
+  width: 60%;
+  padding: 30px;
+}
+.hotels .housing .housing__title {
+}
+.hotels .housing .housing__cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.hotels .housing .housing__cards .card {
+  width: 30%;
+  height: 200px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 5px lightgrey;
+}
+.hotels .housing .housing__cards .card .card__img {
+  height: 60%;
+  width: 100%;
+  /* display: none; */
+}
+.hotels .housing .housing__cards .card .card__img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+.hotels .housing .housing__cards .card .card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 40%;
+}
+.hotels .housing .housing__cards .card .card__text .card__text--description {
+  padding: 5px;
+}
+.hotels .housing .housing__cards .card .card__text .card__text--rating {
+  padding: 5px;
+  color: #0065fc;
+}
+.hotels .housing .housing__cards .card .card__text .card__text--rating .grey {
+  color: grey;
+}
+
+.hotels .popular {
+  background: #f2f2f2;
+  border-radius: 20px;
+  width: 27%;
+  padding: 30px;
+}
