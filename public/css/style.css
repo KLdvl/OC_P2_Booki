@@ -190,6 +190,10 @@ input:focus {
   display: flex;
   justify-content: space-between;
 }
+.hotels .housing .housing__title h1,
+.hotels .popular .popular__title h1 {
+  margin-bottom: 30px;
+}
 /* Partie hébegements */
 .hotels .housing {
   background: #f2f2f2;
@@ -197,12 +201,11 @@ input:focus {
   width: 60%;
   padding: 30px;
 }
-.hotels .housing .housing__title {
-}
 .hotels .housing .housing__cards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: 30px;
 }
 .hotels .housing .housing__cards .card {
   width: 30%;
@@ -216,7 +219,6 @@ input:focus {
 .hotels .housing .housing__cards .card .card__img {
   height: 60%;
   width: 100%;
-  /* display: none; */
 }
 .hotels .housing .housing__cards .card .card__img img {
   height: 100%;
@@ -245,4 +247,49 @@ input:focus {
   border-radius: 20px;
   width: 27%;
   padding: 30px;
+}
+.hotels .popular .popular__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hotels .popular .popular__cards {
+  display: flex;
+  flex-direction: column;
+}
+.hotels .popular .popular__cards .card a {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: white;
+  box-shadow: 2px 2px 5px lightgrey;
+}
+.hotels .popular .popular__cards .card .card__img {
+  height: 100%;
+  width: 35%;
+}
+.hotels .popular .popular__cards .card .card__img img {
+  height: 100%;
+  width: 100%;
+  border-radius: 20px 0 0 20px;
+}
+.hotels .popular .popular__cards .card .card__text {
+  height: 100%;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.hotels .popular .popular__cards .card .card__text .card__text--description {
+  padding: 20px;
+}
+.hotels .popular .popular__cards .card .card__text .card__text--rating {
+  padding: 10px 20px;
+  color: #0065fc;
+}
+.hotels .popular .popular__cards .card .card__text .card__text--rating .grey {
+  color: grey;
 }
