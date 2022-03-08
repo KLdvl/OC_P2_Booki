@@ -40,6 +40,9 @@ main {
 li {
   list-style-type: none;
 }
+.grey {
+  color: grey;
+}
 
 /* Début de header */
 
@@ -214,9 +217,8 @@ li {
   margin-bottom: 30px;
   width: 100%;
 }
-.hotels .housing .housing__cards .card {
-  width: 220px;
-  height: 200px;
+.card a {
+  display: flex;
   border-radius: 20px;
   margin-bottom: 20px;
   padding: 5px;
@@ -224,7 +226,25 @@ li {
   box-shadow: 2px 2px 5px lightgrey;
   transition: all 150ms ease-in-out;
 }
-.hotels .housing .housing__cards .card:hover {
+.card .card__img img {
+  height: 100%;
+  width: 100%;
+}
+.card .card__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card .card__text .card__text--rating {
+  color: #0065fc;
+}
+.hotels .housing .housing__cards .card a {
+  flex-direction: column;
+  width: 220px;
+  height: 200px;
+}
+.hotels .housing .housing__cards .card a:hover,
+.hotels .popular .popular__cards .card a:hover {
   transform: scale(1.05);
 }
 .hotels .housing .housing__cards .card .card__img {
@@ -232,24 +252,12 @@ li {
   width: 100%;
 }
 .hotels .housing .housing__cards .card .card__img img {
-  height: 100%;
-  width: 100%;
   border-radius: 20px 20px 0 0;
 }
 .hotels .housing .housing__cards .card .card__text {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   height: 35%;
   padding: 10px 10px 5px 10px;
 }
-.hotels .housing .housing__cards .card .card__text .card__text--rating {
-  color: #0065fc;
-}
-.grey {
-  color: grey;
-}
-
 .hotels .popular {
   background: #f2f2f2;
   border-radius: 20px;
@@ -268,35 +276,17 @@ li {
 .hotels .popular .popular__cards .card a {
   width: 100%;
   height: 150px;
-  display: flex;
-  border-radius: 20px;
-  margin-bottom: 20px;
-  padding: 5px;
-  background-color: white;
-  box-shadow: 2px 2px 5px lightgrey;
-  transition: all 150ms ease-in-out;
-}
-.hotels .popular .popular__cards .card a:hover {
-  transform: scale(1.05);
 }
 .hotels .popular .popular__cards .card .card__img {
   height: 100%;
   width: 35%;
 }
 .hotels .popular .popular__cards .card .card__img img {
-  height: 100%;
-  width: 100%;
   border-radius: 20px 0 0 20px;
 }
 .hotels .popular .popular__cards .card .card__text {
   width: 65%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 20px 20px 10px 20px;
-}
-.hotels .popular .popular__cards .card .card__text .card__text--rating {
-  color: #0065fc;
 }
 .activities {
   display: flex;
@@ -488,7 +478,7 @@ li {
   .hotels .housing .housing__cards {
     flex-direction: column;
   }
-  .hotels .housing .housing__cards .card {
+  .hotels .housing .housing__cards .card a {
     width: 100%;
   }
   .activities {
