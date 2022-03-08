@@ -244,7 +244,11 @@ li {
   height: 200px;
 }
 .hotels .housing .housing__cards .card a:hover,
-.hotels .popular .popular__cards .card a:hover {
+.hotels .popular .popular__cards .card a:hover,
+.activities .cards .card__large:hover,
+.activities .cards .card__double .card__double--max:hover,
+.activities .cards .card__double .card__double--min:hover,
+.activities .cards .card__double .card__double--even:hover {
   transform: scale(1.05);
 }
 .hotels .housing .housing__cards .card .card__img {
@@ -345,13 +349,6 @@ li {
 }
 .text h4 {
   margin: 0;
-}
-.activities .cards .card__large:hover,
-.activities .cards .card__double .card__double--max:hover,
-.activities .cards .card__double .card__double--min:hover,
-.activities .cards .card__double .card__double--even:hover {
-  cursor: pointer;
-  transform: scale(1.05);
 }
 
 /* Fin de la section activités */
