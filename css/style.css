@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
 
 /* Reset settings */
 * {
@@ -35,7 +35,7 @@ input:focus {
   outline: none;
 }
 main {
-  margin: 0 10px;
+  margin: 0 40px;
 }
 li {
   list-style-type: none;
@@ -46,7 +46,7 @@ li {
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 0 10px;
+  margin: 0 0 0 50px;
 }
 .logo {
   margin-left: 20px;
@@ -57,7 +57,7 @@ li {
 }
 .menu {
   display: flex;
-  min-width: 20%;
+  min-width: 30%;
 }
 .menu__item {
   width: 50%;
@@ -136,7 +136,7 @@ li {
 .filters .filters__container .filters__items .filter {
   display: flex;
   align-items: center;
-  margin: 0 20px 10px 0;
+  margin: 5px 20px 5px 0;
   border-radius: 30px;
   border: 2px solid #f2f2f2;
   padding-right: 10px;
@@ -144,6 +144,7 @@ li {
 }
 .filters .filters__container .filters__items .filter .filter__name {
   padding: 10px;
+  font-weight: 600;
 }
 .filters .filters__container .filters__items .filter:hover {
   cursor: pointer;
@@ -211,9 +212,10 @@ li {
   flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 30px;
+  width: 100%;
 }
 .hotels .housing .housing__cards .card {
-  width: 30%;
+  width: 220px;
   height: 200px;
   border-radius: 20px;
   margin-bottom: 20px;
@@ -238,16 +240,13 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 40%;
-}
-.hotels .housing .housing__cards .card .card__text .card__text--description {
-  padding: 5px;
+  height: 35%;
+  padding: 10px 10px 5px 10px;
 }
 .hotels .housing .housing__cards .card .card__text .card__text--rating {
-  padding: 5px;
   color: #0065fc;
 }
-.hotels .housing .housing__cards .card .card__text .card__text--rating .grey {
+.grey {
   color: grey;
 }
 
@@ -290,21 +289,14 @@ li {
   border-radius: 20px 0 0 20px;
 }
 .hotels .popular .popular__cards .card .card__text {
-  height: 100%;
   width: 65%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-.hotels .popular .popular__cards .card .card__text .card__text--description {
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
 }
 .hotels .popular .popular__cards .card .card__text .card__text--rating {
-  padding: 10px 20px;
   color: #0065fc;
-}
-.hotels .popular .popular__cards .card .card__text .card__text--rating .grey {
-  color: grey;
 }
 .activities {
   display: flex;
@@ -382,9 +374,10 @@ li {
   flex-wrap: wrap;
   padding: 30px;
   margin-top: 50px;
+  justify-content: space-between;
 }
 .footer .links {
-  margin-right: 250px;
+  min-width: 30%;
 }
 .footer .links ul li {
   padding-top: 10px;
@@ -393,15 +386,18 @@ li {
 /* Affichage tablette */
 
 @media only screen and (max-width: 992px) and (min-width: 769px) {
+  main {
+    margin: 0 10px;
+  }
+  .header {
+    margin: 0 0 0 20px;
+  }
   .menu {
     min-width: 40%;
   }
   .searchbar__form {
     justify-content: center;
     margin-top: 30px;
-  }
-  .filters .filters__container .filters__title {
-    margin-bottom: 10px;
   }
   .hotels {
     flex-direction: column-reverse;
@@ -417,13 +413,7 @@ li {
     width: 30%;
   }
   .hotels .popular .popular__cards .card .card__text {
-    justify-content: space-evenly;
-  }
-  .hotels .popular .popular__cards .card .card__text .card__text--description {
-    padding: 5px;
-  }
-  .hotels .popular .popular__cards .card .card__text .card__text--rating {
-    padding: 10px 5px;
+    padding: 5px 5px 10px 5px;
   }
   .hotels .housing {
     width: inherit;
@@ -435,10 +425,6 @@ li {
   .activities .cards .card__large,
   .activities .cards .card__double {
     width: 23%;
-  }
-
-  .footer .links {
-    margin-right: 100px;
   }
 }
 
@@ -462,6 +448,7 @@ li {
   }
   .menu__item {
     padding-bottom: 20px;
+    border-bottom: 2px solid #f2f2f2;
   }
   .menu__item:hover {
     border-top: none;
