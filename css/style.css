@@ -17,28 +17,26 @@ a:visited,
 a:link {
   color: inherit;
 }
-img {
-  object-fit: cover;
-}
-
-h1 {
-  font-size: 20px;
-}
-h4 {
-  margin-bottom: 5px;
-}
-
 input {
   border: none;
 }
 input:focus {
   outline: none;
 }
+li {
+  list-style-type: none;
+}
 main {
   margin: 0 40px;
 }
-li {
-  list-style-type: none;
+img {
+  object-fit: cover;
+}
+h1 {
+  font-size: 20px;
+}
+h4 {
+  margin-bottom: 5px;
 }
 .grey {
   color: grey;
@@ -88,7 +86,6 @@ li {
 .searchbar__form {
   display: flex;
   align-items: center;
-  /* height: 50px; */
 }
 .searchbar .searchbar__form .dot {
   display: flex;
