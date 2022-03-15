@@ -63,7 +63,6 @@ h4 {
   padding-top: 40px;
   cursor: pointer;
   border-top: 2px solid transparent;
-  transition: all 100ms ease-in-out;
 }
 .menu__item:hover {
   color: #0065fc;
@@ -381,6 +380,21 @@ h4 {
   .menu {
     min-width: 40%;
   }
+  .menu__item:focus {
+    color: #0065fc;
+    border-top: 2px solid #0065fc;
+  }
+  .filters .filters__container .filters__items .filter:focus {
+    cursor: pointer;
+    color: #0065fc;
+    background-color: #f2f2f2;
+    transition: all 200ms ease-in-out;
+  }
+  .filters .filters__container .filters__items .filter:focus .filter__icon {
+    background-color: #0065fc;
+    color: white;
+    transition: all 200ms ease-in-out;
+  }
   .searchbar__form {
     justify-content: center;
     margin-top: 30px;
@@ -390,6 +404,7 @@ h4 {
   }
   .hotels .popular {
     width: inherit;
+    margin-left: 0;
   }
   .hotels .popular .popular__cards {
     flex-direction: row;
@@ -404,6 +419,7 @@ h4 {
   .hotels .housing {
     width: inherit;
     margin-top: 15px;
+    margin-right: 0;
   }
   .activities .cards {
     transform: scale(0.9);
@@ -440,6 +456,22 @@ h4 {
     border-top: none;
     border-bottom: 2px solid #0065fc;
   }
+  .menu__item:focus {
+    border-top: none;
+    border-bottom: 2px solid #0065fc;
+    color: #0065fc;
+  }
+  .filters .filters__container .filters__items .filter:focus {
+    cursor: pointer;
+    color: #0065fc;
+    background-color: #f2f2f2;
+    transition: all 200ms ease-in-out;
+  }
+  .filters .filters__container .filters__items .filter:focus .filter__icon {
+    background-color: #0065fc;
+    color: white;
+    transition: all 200ms ease-in-out;
+  }
   .searchbar {
     margin: 10px 15px 20px;
   }
@@ -466,10 +498,12 @@ h4 {
   .hotels .popular {
     width: inherit;
     border-radius: 0;
+    margin-left: 0;
   }
   .hotels .housing {
     width: inherit;
     background-color: transparent;
+    margin-right: 0;
   }
   .hotels .housing .housing__cards {
     flex-direction: column;
