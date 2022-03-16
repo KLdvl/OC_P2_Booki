@@ -15,7 +15,7 @@ a {
 }
 a:visited,
 a:link {
-  color: inherit;
+  color: black;
 }
 input {
   border: none;
@@ -65,8 +65,10 @@ h4 {
   border-top: 2px solid transparent;
 }
 .menu__item:hover {
-  color: #0065fc;
   border-top: 2px solid #0065fc;
+}
+.menu__item:hover a {
+  color: #0065fc;
 }
 /* Fin de header */
 
