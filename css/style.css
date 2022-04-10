@@ -10,6 +10,8 @@ body {
   font-family: "Raleway", sans-serif;
   box-sizing: border-box;
   min-height: 100vh;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 a {
   text-decoration: none;
@@ -64,6 +66,12 @@ h4 {
   padding-top: 40px;
   cursor: pointer;
   border-top: 2px solid transparent;
+}
+.hover__default--item {
+  border-top: 2px solid #0065fc;
+}
+a:link.hover__default--link {
+  color: #0065fc;
 }
 .menu__item:hover {
   border-top: 2px solid #0065fc;
@@ -461,12 +469,16 @@ h4 {
     padding-bottom: 20px;
     border-bottom: 2px solid #f2f2f2;
   }
+  .hover__default--item {
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid #0065fc;
+  }
   .menu__item:hover {
-    border-top: none;
+    border-top: 2px solid transparent;
     border-bottom: 2px solid #0065fc;
   }
   .menu__item:focus {
-    border-top: none;
+    border-top: 2px solid transparent;
     border-bottom: 2px solid #0065fc;
     color: #0065fc;
   }
@@ -488,7 +500,7 @@ h4 {
     position: relative;
   }
   .searchbar__form input {
-    width: 85%;
+    width: 90%;
   }
   .searchbar .searchbar__form .searchbar__form--button.search {
     display: none;
